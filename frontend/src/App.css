@@ -1,0 +1,62 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #A9A9A9; /* Light gray background for the whole app */
+  color: #fff; /* White text for dark mode */
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.todo-weather-container {
+  display: flex; /* Flexbox layout for side by side */
+  justify-content: center; /* Center the container horizontally */
+  gap: 20px; /* Space between the two apps */
+}
+
+.todo-container,
+.weather-container {
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside each app */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  flex: 1; /* Allow both components to grow equally */
+  max-width: 400px; /* Optional: limit max width for responsiveness */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #040505;
+}
+
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

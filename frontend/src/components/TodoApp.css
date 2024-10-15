@@ -1,0 +1,82 @@
+/* src/components/TodoApp.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #A9A9A9; /* Set the background color */
+    color: #fff; /* White text for dark mode */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #2c2c2c; /* Darker background for the todo app */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #A9A9A9; /* Light gray header */
+  }
+  
+  .todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between inputs */
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #555; /* Dark border */
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px; /* Limit input width */
+    background: #444; /* Dark input background */
+    color: white; /* Input text color */
+  }
+  
+  .add-button, .update-button, .delete-button, .edit-button {
+    padding: 10px;
+    background-color: #4c51bf; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .add-button:hover, .update-button:hover, .delete-button:hover, .edit-button:hover {
+    background-color: #434190; /* Darker on hover */
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: #444; /* Darker background for todo items */
+    border-radius: 5px;
+  }
+  
+  .todo-text {
+    flex-grow: 1; /* Allow text to grow and take available space */
+  }
+  
+  .todo-buttons {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+  }
+  
